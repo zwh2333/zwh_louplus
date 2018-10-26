@@ -1,0 +1,9 @@
+{% macro file_content(l, type=bootstrap) %}
+    <div>
+    	<p>title:{{ l["title"] }}</p>
+    	<p>created_time:{{ l["created-time"] }}</p>
+    	<p>content:{{ l["content"] }}</p>
+    </div>
+{% endmacro %}
+
+<div>{{ file_content(l) }}</div>
